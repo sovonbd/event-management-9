@@ -6,7 +6,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const StickyNavbar = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -46,12 +46,12 @@ const StickyNavbar = () => {
             as="a"
             href="#"
             className="mr-4 cursor-pointer py-1.5 font-bold text-3xl">
-            Inconference
+            <Link to="/">Inconference</Link>
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden md:block">{navList}</div>
             <Button
-            variant=""
+              variant=""
               size="sm"
               className="hidden md:inline-block bg-white text-black">
               <span>Login</span>
@@ -92,9 +92,15 @@ const StickyNavbar = () => {
             </IconButton>
           </div>
         </div>
-        <MobileNav className="backdrop-blur-sm backdrop-saturate-200" open={openNav}>
+        <MobileNav
+          className="backdrop-blur-sm backdrop-saturate-200"
+          open={openNav}>
           {navList}
-          <Button variant="" size="sm" fullWidth className="mb-2 bg-white text-black">
+          <Button
+            variant=""
+            size="sm"
+            fullWidth
+            className="mb-2 bg-white text-black">
             <span>Login</span>
           </Button>
         </MobileNav>

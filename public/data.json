@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "title": "Annual Corporate Summit 2023",
+    "image": "https://i.imgur.com/pBQ3nSO.jpg",
+    "price": 249.99,
+    "description": "The Annual Corporate Summit 2023 is the flagship event for corporate leaders, executives, and professionals from around the world. This prestigious conference is the epicenter of knowledge exchange, networking, and collaboration in the corporate realm. With a focus on innovation, strategy, and leadership, it offers an unparalleled opportunity to gain insights, elevate your career, and drive business success.",
+    "date": "October 30, 2023"
+  },
+  {
+    "id": "2",
+    "title": "Tech Innovation Forum",
+    "image": "https://i.imgur.com/sojMOHP.jpg",
+    "price": 199.99,
+    "description": "The Tech Innovation Forum is an immersive and forward-looking conference dedicated to the intersection of technology and business. This event brings together tech enthusiasts, entrepreneurs, corporate innovators, and industry leaders to explore the latest advancements, trends, and strategies that are shaping the digital landscape.",
+    "date": "November 5, 2023"
+  },
+  {
+    "id": "3",
+    "title": "Global Leadership Conference",
+    "image": "https://i.imgur.com/9dTsrag.jpg",
+    "price": 349.99,
+    "description": "The Global Leadership Conference is an extraordinary gathering of corporate leaders, executives, and decision-makers from across the globe. It serves as a powerful catalyst for leadership development, international collaboration, and cross-cultural understanding. If you aspire to lead in the global corporate arena, this conference is your essential destination.",
+    "date": "November 10, 2023"
+  },
+  {
+    "id": "4",
+    "title": "Marketing Excellence Summit",
+    "image": "https://i.imgur.com/eVSlE6Y.jpg",
+    "price": 149.99,
+    "description": "The Marketing Excellence Summit is a premier gathering for marketing professionals, brand managers, and business leaders who are dedicated to achieving marketing excellence in today's dynamic landscape.",
+    "date": "November 15, 2023"
+  },
+  {
+    "id": "5",
+    "title": "Financial Strategy Symposium",
+    "image": "https://i.imgur.com/EsnhxRZ.jpg",
+    "price": 199.99,
+    "description": "The Financial Strategy Symposium is a must-attend event for finance professionals, CFOs, and corporate decision-makers who want to navigate the complexities of financial management and strategy.",
+    "date": "November 18, 2023"
+  },
+  {
+    "id": "6",
+    "title": "Sustainable Business Forum",
+    "image": "https://i.imgur.com/zBzQrmr.jpg",
+    "price": 129.99,
+    "description": "The Sustainable Business Forum is a dynamic and forward-thinking conference dedicated to the intersection of sustainability and business. It brings together sustainability professionals, corporate leaders, environmental advocates, and innovators to explore how businesses can thrive while making a positive impact on the planet.",
+    "date": "November 25, 2023"
+  },
+  {
+    "id": "7",
+    "title": "Innovation Leadership Conference",
+    "image": "https://i.imgur.com/4WOP3iM.jpg",
+    "price": 299.99,
+    "description": "The Innovation Leadership Conference is a groundbreaking event designed to empower leaders and innovators to drive meaningful change within their organizations.",
+    "date": "November 28, 2023"
+  },
+  {
+    "id": "8",
+    "title": "Healthcare Innovation Summit",
+    "image": "https://i.imgur.com/VvmkKw1.jpg",
+    "price": 299.99,
+    "description": "The Healthcare Innovation Summit is a pivotal event for healthcare professionals, executives, and leaders who are passionate about transforming the healthcare industry through innovation.",
+    "date": "December 5, 2023"
+  },
+  {
+    "id": "9",
+    "title": "Leadership Excellence Symposium",
+    "image": "https://i.imgur.com/nH4YdDF.jpg",
+    "price": 249.99,
+    "description": "The Leadership Excellence Symposium is a premier gathering of leaders, executives, and professionals dedicated to honing their leadership skills and driving excellence in their organizations.",
+    "date": "December 15, 2023"
+  },
+  {
+    "id": "10",
+    "title": "Future of Work Conference",
+    "image": "https://i.imgur.com/ifZ98G4.jpg",
+    "price": 249.99,
+    "description": "The Future of Work Conference is a forward-thinking event that explores the rapidly evolving landscape of work and the strategies needed to thrive in the digital age.",
+    "date": "January 15, 2024"
+  },
+  {
+    "id": "11",
+    "title": "Entrepreneurship Summit",
+    "image": "https://i.imgur.com/OWA4Nm1.jpg",
+    "price": 149.99,
+    "description": "The Entrepreneurship Summit is the ultimate gathering for aspiring and seasoned entrepreneurs. This summit is your gateway to learning the ins and outs of entrepreneurship, from ideation to successful business ventures.",
+    "date": "January 25, 2024"
+  },
+  {
+    "id": "12",
+    "title": "Data Science Symposium",
+    "image": "https://i.imgur.com/ETFPiwQ.jpg",
+    "price": 199.99,
+    "description": "The Data Science Symposium is a data-driven extravaganza for professionals, data scientists, and analytics enthusiasts. Explore the latest trends, tools, and techniques in data science and gain insights into how data-driven decision-making can revolutionize businesses.",
+    "date": "January 28, 2024"
+  }
+]

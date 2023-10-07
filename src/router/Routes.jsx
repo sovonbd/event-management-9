@@ -3,6 +3,8 @@ import Root from "../layout/Root";
 import Home from "../pages/Home/Home";
 import Speakers from "../pages/Speakers/Speakers";
 import Conferences from "../pages/Conferences/Conferences";
+import Services from "../components/Card/Card";
+import CardItemPage from "../pages/CardItemPage/CardItemPage";
 
 const Routes = createBrowserRouter([
   {
@@ -12,6 +14,7 @@ const Routes = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch("data.json"),
       },
       {
         path: "/speakers",
@@ -20,6 +23,11 @@ const Routes = createBrowserRouter([
       {
         path: "/conferences",
         element: <Conferences></Conferences>,
+      },
+      {
+        path: "/conferences/:id",
+        element: <CardItemPage></CardItemPage>,
+        loader: () => fetch("data.json"),
       },
     ],
   },
