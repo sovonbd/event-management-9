@@ -10,6 +10,9 @@ const CarouselWithContent = () => {
     <div>
       <Carousel
         className=""
+        autoplay = {true}
+        autoplayDelay	= {5000}
+        loop = {true}
         prevArrow={({ handlePrev }) => (
           <IconButton
             variant="text"
@@ -32,12 +35,12 @@ const CarouselWithContent = () => {
             </svg>
           </IconButton>
         )}
-        nextArrow={({ handleNext }) => (
+        nextArrow={({ handleNext}) => (
           <IconButton
             variant="text"
             color="white"
             size="lg"
-            onClick={handleNext}
+            onClick={handleNext}          
             className="!absolute top-2/4 lg:top-96 !right-0 md:!right-4 -translate-y-2/4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
