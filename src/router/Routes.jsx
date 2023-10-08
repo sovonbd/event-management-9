@@ -6,6 +6,8 @@ import Conferences from "../pages/Conferences/Conferences";
 import CardItemPage from "../pages/CardItemPage/CardItemPage";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
 
 const Routes = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const Routes = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs></ContactUs>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       },
     ],
   },

@@ -5,7 +5,7 @@ import {
   Typography,
   Button,
   IconButton,
-  Collapse
+  Collapse,
 } from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -61,12 +61,14 @@ const StickyNavbar = () => {
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden md:block">{navList}</div>
-            <Button
-              variant="filled"
-              size="sm"
-              className="hidden md:inline-block bg-white text-black">
-              <span>Login</span>
-            </Button>
+            <NavLink to="/login">
+              <Button
+                variant="filled"
+                size="sm"
+                className="hidden md:inline-block bg-white text-black">
+                <span>Login</span>
+              </Button>
+            </NavLink>
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden"
@@ -107,13 +109,14 @@ const StickyNavbar = () => {
           className="backdrop-blur-sm backdrop-saturate-200"
           open={openNav}>
           {navList}
-          <Button
-            variant="filled"
-            size="sm"
-            fullWidth
-            className="mb-2 bg-white text-black">
-            <span>Login</span>
-          </Button>
+          <NavLink to="/login">
+            <Button
+              variant="filled"
+              size="sm"
+              className="hidden md:inline-block bg-white text-black">
+              <span>Login</span>
+            </Button>
+          </NavLink>
         </Collapse>
       </Navbar>
     </div>
