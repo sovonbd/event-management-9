@@ -10,20 +10,30 @@ import {
 
 const Footer = () => {
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-row gap-2 md:mb-0 md:items-center md:gap-6 text-white justify-center">
+    <ul className="mb-4 mt-2 flex flex-row md:mb-0 md:items-center md:gap-6 text-white justify-center">
       <Typography as="li" variant="small" className="p-1 font-normal">
         <NavLink to="/" className="flex items-center">
-          Home <span className="pl-8">|</span>
+          Home <span className="pl-2 md:pl-8">|</span>
         </NavLink>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
         <NavLink to="/conferences" className="flex items-center">
-          Conferences <span className="pl-8">|</span>
+          Conferences <span className="pl-2 md:pl-8">|</span>
         </NavLink>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
         <NavLink to="/speakers" className="flex items-center">
-          Speakers
+          Speakers <span className="pl-2 md:pl-8">|</span>
+        </NavLink>
+      </Typography>
+      <Typography as="li" variant="small" className="p-1 font-normal">
+        <NavLink to="/about" className="flex items-center">
+          About Us <span className="pl-2 md:pl-8">|</span>
+        </NavLink>
+      </Typography>
+      <Typography as="li" variant="small" className="p-1 font-normal">
+        <NavLink to="/contact" className="flex items-center">
+          Contact Us
         </NavLink>
       </Typography>
     </ul>

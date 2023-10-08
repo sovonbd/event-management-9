@@ -36,6 +36,16 @@ const StickyNavbar = () => {
           Speakers
         </NavLink>
       </Typography>
+      <Typography as="li" variant="small" className="p-1 font-normal">
+        <NavLink to="/about" className="flex items-center">
+          About Us
+        </NavLink>
+      </Typography>
+      <Typography as="li" variant="small" className="p-1 font-normal">
+        <NavLink to="/contact" className="flex items-center">
+          Contact Us
+        </NavLink>
+      </Typography>
     </ul>
   );
 
