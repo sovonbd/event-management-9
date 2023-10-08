@@ -12,8 +12,24 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
+  const { signInWithGoogle, signInWithGithub } = useContext(AuthContext);
+
+  const handleGoogleLogin = () => {
+    signInWithGoogle()
+      .then((res) => console.log(res.user))
+      .catch((err) => console.log(err));
+  };
+
+  const handleGithubLogin = () => {
+    signInWithGithub()
+      .then((res) => console.log(res.user))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="py-20">
       <Card className="w-96 mx-auto">
@@ -59,12 +75,14 @@ const Login = () => {
           </div>
           <div className="flex gap-4">
             <Button
+              onClick={handleGoogleLogin}
               fullWidth
               className="bg-transparent text-black border border-gray-400 shadow-none normal-case flex items-center gap-2 text-base py-2">
               <FcGoogle className="text-3xl"></FcGoogle>
               <span>Google</span>
             </Button>
             <Button
+              onClick={handleGithubLogin}
               fullWidth
               className="bg-transparent text-black border border-gray-400 shadow-none normal-case flex items-center gap-2 text-base py-2">
               <FaGithub className="text-3xl"></FaGithub> <span>Github</span>

@@ -33,7 +33,7 @@ const Home = () => {
           className="mx-auto lg:pb-10"
           alt=""
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-0 lg::grid-cols-3 justify-around">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-0 lg::grid-cols-3 px-3 justify-around">
           {cards.slice(0, 6).map((card) => (
             <CardItem key={card.id} card={card}></CardItem>
           ))}

@@ -20,29 +20,69 @@ const StickyNavbar = () => {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-6 text-white">
+    <ul className="mb-4 mt-2 flex flex-col gap-2 md:mb-0 md:gap-2 lg:gap-6 md:mt-0 md:flex-row md:items-center text-white">
       <Typography as="li" variant="small" className="p-1 font-normal">
-        <NavLink to="/" className="flex items-center ">
+        <NavLink
+          to="/"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline font-medium text-lg"
+              : ""
+          }>
           Home
         </NavLink>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
-        <NavLink to="/conferences" className="flex items-center">
+        <NavLink
+          to="/conferences"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline font-medium text-lg"
+              : ""
+          }>
           Conferences
         </NavLink>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
-        <NavLink to="/speakers" className="flex items-center">
+        <NavLink
+          to="/speakers"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline font-medium text-lg"
+              : ""
+          }>
           Speakers
         </NavLink>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
-        <NavLink to="/about" className="flex items-center">
+        <NavLink
+          to="/about"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline font-medium text-lg"
+              : ""
+          }>
           About Us
         </NavLink>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
-        <NavLink to="/contact" className="flex items-center">
+        <NavLink
+          to="/contact"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline font-medium text-lg"
+              : ""
+          }>
           Contact Us
         </NavLink>
       </Typography>
@@ -51,12 +91,12 @@ const StickyNavbar = () => {
 
   return (
     <div className="max-h-[768px] lg:px-24 lg:py-10">
-      <Navbar className="sticky bg-transparent backdrop-blur-none backdrop-filter-none border-none top-0 z-10 h-max max-w-full rounded-none shadow-none py-2 px-4 md:px-8 md:py-4">
+      <Navbar className="sticky bg-transparent backdrop-blur-none backdrop-filter-none border-none top-0 z-10 h-max max-w-full rounded-none shadow-none py-2 px-4 md:px-3 lg:px-8 md:py-4">
         <div className="flex items-center justify-between text-white">
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-bold text-3xl">
+            className="pr-4 cursor-pointer py-1.5 font-bold text-3xl">
             <Link to="/">Inconference</Link>
           </Typography>
           <div className="flex items-center gap-4">
@@ -109,14 +149,13 @@ const StickyNavbar = () => {
           className="backdrop-blur-sm backdrop-saturate-200"
           open={openNav}>
           {navList}
-          <NavLink to="/login">
-            <Button
-              variant="filled"
-              size="sm"
-              className="hidden md:inline-block bg-white text-black">
-              <span>Login</span>
-            </Button>
-          </NavLink>
+          <Button
+            variant="filled"
+            size="sm"
+            fullWidth
+            className="mb-2 bg-white text-black">
+            <Link to="/login">Login</Link>
+          </Button>
         </Collapse>
       </Navbar>
     </div>
@@ -124,3 +163,5 @@ const StickyNavbar = () => {
 };
 
 export default StickyNavbar;
+
+// className={({ isActive, isPending }) => (isPending ? "pending" : isActive ? "underline font-medium text-lg" : "f")}
