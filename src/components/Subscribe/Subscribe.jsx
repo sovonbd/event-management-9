@@ -22,9 +22,8 @@ const Subscribe = () => {
       <div className="relative h-80 lg:h-96">
         <img
           style={{
-            backgroundImage: "url('https://i.imgur.com/DuFpvMY.jpg')",
+            backgroundImage: "url('https://i.imgur.com/XKL8Glv.jpg')",
             backgroundSize: "cover",
-            backgroundAttachment: "fixed",
             backgroundRepeat: "no-repeat",
           }}
           alt=""
@@ -65,9 +64,18 @@ const Subscribe = () => {
           </div>
         </div>
       </div>
-      <Marquee className="py-16">
-        <Sponsors></Sponsors>
-      </Marquee>{" "}
+      <div className="py-16 text-center">
+        <p className="opacity-60">OUR CLIENTS</p>
+        <h2 className="text-3xl lg:text-5xl">Partners & Sponsors</h2>
+        <img
+          src="https://i.imgur.com/BGzObsJ.jpg"
+          className="mx-auto py-4"
+          alt=""
+        />
+        <Marquee className="py-16">
+          <Sponsors></Sponsors>
+        </Marquee>
+      </div>
     </div>
   );
 };

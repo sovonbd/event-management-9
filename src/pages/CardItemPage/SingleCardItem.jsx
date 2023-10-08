@@ -1,21 +1,12 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-  Avatar,
-  Tooltip,
-  Button,
-} from "@material-tailwind/react";
+import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import StickyNavbar from "../../components/Header/Navbar/StickyNavbar";
 import Swal from "sweetalert2";
 
 const SingleCardItem = ({ cardItem }) => {
-  const { id, title, image, price, description, date } = cardItem;
+  const { id, title, image, price, description, date, location } = cardItem;
 
-  const handlebutton = () => {
+  const handleButton = () => {
     Swal.fire({
       icon: "success",
       title: "Congratulations !!!",
@@ -26,9 +17,6 @@ const SingleCardItem = ({ cardItem }) => {
 
   return (
     <div>
-      <div className="bg-black">
-        <StickyNavbar></StickyNavbar>
-      </div>
       <Card className="lg:px-32 lg:py-10 overflow-hidden">
         <div className="relative h-screen w-full">
           <img src={image} alt={title} className="h-full w-full object-cover" />
@@ -50,11 +38,11 @@ const SingleCardItem = ({ cardItem }) => {
                 variant="lead"
                 color="white"
                 className="mb-6 lg:mb-12 text-sm lg:text-xl opacity-80">
-                TORONTO EXHIBITION CENTER, CANADA
+                {location}
               </Typography>
               <div className="flex justify-center gap-2">
                 <Button
-                  onClick={handlebutton}
+                  onClick={handleButton}
                   size="lg"
                   color="white"
                   className="normal-case text-xl">
@@ -65,7 +53,7 @@ const SingleCardItem = ({ cardItem }) => {
           </div>
         </div>
 
-        <CardBody className="px-0">
+        <CardBody className="px-8 lg:px-0">
           <Typography
             variant="lead"
             color="gray"

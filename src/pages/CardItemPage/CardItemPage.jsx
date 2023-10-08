@@ -5,9 +5,9 @@ import SingleCardItem from "./singleCardItem";
 const CardItemPage = () => {
   const [cardItems, setCardItems] = useState([]);
   const data = useLoaderData();
-  // console.log(data);
+  console.log(data);
   const { id } = useParams();
-  // console.log(id);
+  console.log(id);
 
   useEffect(() => {
     if (data) {
