@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import StickyNavbar from "../components/Header/Navbar/StickyNavbar";
 import Footer from "../components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Root = () => {
   const location = useLocation();
@@ -15,10 +16,13 @@ const Root = () => {
         </div>
       )}
       <Outlet></Outlet>
-      <div className={location.pathname === "/" ? "relative top-[300px] lg:top-[600px]" : ""}>
+      <div
+        className={
+          location.pathname === "/" ? "relative top-[300px] lg:top-[600px]" : ""
+        }>
         <Footer></Footer>
       </div>
-      <ToastContainer></ToastContainer>
+      <ToastContainer style={{ width: "max-content" }}></ToastContainer>
     </div>
   );
 };

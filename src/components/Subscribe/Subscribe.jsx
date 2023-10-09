@@ -3,17 +3,14 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import Sponsors from "../Sponsors/Sponsors";
 import Marquee from "react-fast-marquee";
+import { toast } from "react-toastify";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
 
   const handleSubscribe = () => {
-    Swal.fire({
-      icon: "success",
-      title: "Thank you for subscribing!",
-      text: "You're now part of our community. Expect exciting updates in your inbox soon. Stay tuned!",
-      confirmButtonColor: "black",
-    });
+    toast.success("Thank you for subscribing!");
+
     setEmail("");
   };
 

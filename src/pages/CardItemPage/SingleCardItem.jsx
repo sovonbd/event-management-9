@@ -1,18 +1,14 @@
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import StickyNavbar from "../../components/Header/Navbar/StickyNavbar";
-import Swal from "sweetalert2";
+import { toast } from "react-toastify";
 
 const SingleCardItem = ({ cardItem }) => {
   const { id, title, image, price, description, date, location } = cardItem;
 
   const handleButton = () => {
-    Swal.fire({
-      icon: "success",
-      title: "Congratulations !!!",
-      text: "Event booking complete! Get ready to have a blast.",
-      confirmButtonColor: "black",
-    });
+    toast.success("Congratulations!!! Event booking complete.");
+
   };
 
   return (

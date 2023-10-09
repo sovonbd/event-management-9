@@ -64,19 +64,6 @@ const StickyNavbar = () => {
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
         <NavLink
-          to="/about"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline font-medium text-lg"
-              : ""
-          }>
-          About Us
-        </NavLink>
-      </Typography>
-      <Typography as="li" variant="small" className="p-1 font-normal">
-        <NavLink
           to="/contact"
           className={({ isActive, isPending }) =>
             isPending

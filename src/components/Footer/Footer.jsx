@@ -27,11 +27,6 @@ const Footer = () => {
         </NavLink>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
-        <NavLink to="/about" className="flex items-center">
-          About Us <span className="pl-2 md:pl-8">|</span>
-        </NavLink>
-      </Typography>
-      <Typography as="li" variant="small" className="p-1 font-normal">
         <NavLink to="/contact" className="flex items-center">
           Contact Us
         </NavLink>
