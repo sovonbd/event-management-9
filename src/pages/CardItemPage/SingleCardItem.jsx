@@ -1,14 +1,12 @@
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
-import StickyNavbar from "../../components/Header/Navbar/StickyNavbar";
 import { toast } from "react-toastify";
+import PropTypes from "prop-types";
 
 const SingleCardItem = ({ cardItem }) => {
-  const { id, title, image, price, description, date, location } = cardItem;
+  const { title, image, price, description, date, location } = cardItem;
 
   const handleButton = () => {
     toast.success("Congratulations!!! Event booking complete.");
-
   };
 
   return (
@@ -61,6 +59,10 @@ const SingleCardItem = ({ cardItem }) => {
       </Card>
     </div>
   );
+};
+
+SingleCardItem.propTypes = {
+  cardItem: PropTypes.object.isRequired,
 };
 
 export default SingleCardItem;

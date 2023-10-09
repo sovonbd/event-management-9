@@ -1,5 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   FaFacebookF,
   FaGoogle,

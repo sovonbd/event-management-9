@@ -6,9 +6,10 @@ import {
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import { FaMapMarkerAlt, FaRegCalendarAlt } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 const CardItem = ({ card }) => {
-  const { id, title, image, price, description, date, location } = card;
+  const { id, title, image, description, date, location } = card;
 
   // const parts = locaiton.split(' ');
 
@@ -58,6 +59,10 @@ const CardItem = ({ card }) => {
       </Card>
     </div>
   );
+};
+
+CardItem.propTypes = {
+  card: PropTypes.object.isRequired,
 };
 
 export default CardItem;

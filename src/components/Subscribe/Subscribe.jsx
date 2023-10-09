@@ -1,6 +1,5 @@
 import { Typography, Button } from "@material-tailwind/react";
 import { useState } from "react";
-import Swal from "sweetalert2";
 import Sponsors from "../Sponsors/Sponsors";
 import Marquee from "react-fast-marquee";
 import { toast } from "react-toastify";
