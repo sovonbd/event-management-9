@@ -29,6 +29,7 @@ const Routes = createBrowserRouter([
             <Speakers></Speakers>
           </PrivateRoute>
         ),
+        loader: () => fetch("/speakers.json"),
       },
       {
         path: "/conferences",
@@ -45,7 +46,6 @@ const Routes = createBrowserRouter([
             <CardItemPage></CardItemPage>
           </PrivateRoute>
         ),
-        loader: () => fetch("/data.json"),
       },
       {
         path: "/about",
