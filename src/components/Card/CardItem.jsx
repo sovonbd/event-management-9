@@ -47,7 +47,7 @@ const CardItem = ({ card }) => {
           <Typography
             variant="lead"
             color="gray"
-            className="mt-3 text-base pb-4 text-justify">
+            className="mt-3 text-base pb-4 text-start">
             {description.split(" ").slice(0, 13).join(" ")}
             {description.split(" ").length > 20 ? "... " : ""}
             <Link to={`/conferences/${id}`} className="text-blue-800 font-bold">

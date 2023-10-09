@@ -31,7 +31,7 @@
     "title": "Marketing Excellence Summit",
     "image": "https://i.imgur.com/eVSlE6Y.jpg",
     "price": 149.99,
-    "description": "The Marketing Excellence Summit is a premier gathering for marketing professionals, brand managers, and business leaders who are dedicated to achieving marketing excellence in today's dynamic landscape.",
+    "description": "The Marketing Excellence Summit is a premier gathering for marketing workers, brand managers, and business leaders who are dedicated to achieving marketing excellence in today's dynamic landscape.",
     "date": "November 15, 2023",
     "location": "Paris Expo Porte de Versailles, France"
   },
@@ -55,7 +55,7 @@
   },
   {
     "id": "7",
-    "title": "Innovation Leadership Conference",
+    "title": "Innovation Leadership Forum",
     "image": "https://i.imgur.com/4WOP3iM.jpg",
     "price": 299.99,
     "description": "The Innovation Leadership Conference is a groundbreaking event designed to empower leaders and innovators to drive meaningful change within their organizations.",
@@ -73,7 +73,7 @@
   },
   {
     "id": "9",
-    "title": "Leadership Excellence Symposium",
+    "title": "Leadership Excellence Summit",
     "image": "https://i.imgur.com/nH4YdDF.jpg",
     "price": 249.99,
     "description": "The Leadership Excellence Symposium is a premier gathering of leaders, executives, and professionals dedicated to honing their leadership skills and driving excellence in their organizations.",

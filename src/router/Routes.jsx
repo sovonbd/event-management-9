@@ -38,6 +38,7 @@ const Routes = createBrowserRouter([
             <Conferences></Conferences>
           </PrivateRoute>
         ),
+        loader: () => fetch("/data.json"),
       },
       {
         path: "/conferences/:id",
@@ -46,6 +47,7 @@ const Routes = createBrowserRouter([
             <CardItemPage></CardItemPage>
           </PrivateRoute>
         ),
+        loader: () => fetch("/data.json"),
       },
       {
         path: "/about",

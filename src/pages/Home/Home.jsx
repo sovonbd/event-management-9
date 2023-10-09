@@ -10,9 +10,7 @@ const Home = () => {
   const data = useLoaderData();
 
   useEffect(() => {
-    // fetch("data.json")
-    //   .then((res) => res.json())
-    //   .then((data) => setCards(data));
+
     if (data) {
       setCards(data);
     }
