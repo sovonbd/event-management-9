@@ -4,15 +4,16 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const CarouselWithContent = () => {
   return (
     <div>
       <Carousel
         className=""
-        autoplay = {true}
-        autoplayDelay	= {5000}
-        loop = {true}
+        autoplay={true}
+        autoplayDelay={5000}
+        loop={true}
         prevArrow={({ handlePrev }) => (
           <IconButton
             variant="text"
@@ -35,12 +36,12 @@ const CarouselWithContent = () => {
             </svg>
           </IconButton>
         )}
-        nextArrow={({ handleNext}) => (
+        nextArrow={({ handleNext }) => (
           <IconButton
             variant="text"
             color="white"
             size="lg"
-            onClick={handleNext}          
+            onClick={handleNext}
             className="!absolute top-2/4 lg:top-96 !right-0 md:!right-4 -translate-y-2/4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,17 +84,21 @@ const CarouselWithContent = () => {
                 className="mb-6 lg:mb-12 text-sm lg:text-xl opacity-80">
                 TORONTO EXHIBITION CENTER, CANADA
               </Typography>
-              <div className="flex justify-center gap-2">
-                <Button size="lg" color="white">
-                  Register Now
-                </Button>
-                <Button
-                  size="sm"
-                  color="white"
-                  variant="text"
-                  className="border">
-                  Explore More
-                </Button>
+              <div className="flex justify-center items-center gap-2">
+                <Link to="/conferences">
+                  <Button size="lg" color="white">
+                    Register Now
+                  </Button>
+                </Link>
+                <Link to="/conferences">
+                  <Button
+                    size="sm"
+                    color="white"
+                    variant="text"
+                    className="border py-4">
+                    Explore More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -124,17 +129,21 @@ const CarouselWithContent = () => {
                 className="mb-6 lg:mb-12 text-sm lg:text-xl opacity-80">
                 VANCOUVER EXHIBITION CENTER, CANADA
               </Typography>
-              <div className="flex justify-center gap-2">
-                <Button size="lg" color="white">
-                  Register Now
-                </Button>
-                <Button
-                  size="sm"
-                  color="white"
-                  variant="text"
-                  className="border">
-                  Explore More
-                </Button>
+              <div className="flex justify-center items-center gap-2">
+                <Link to="/conferences">
+                  <Button size="lg" color="white">
+                    Register Now
+                  </Button>
+                </Link>
+                <Link to="/conferences">
+                  <Button
+                    size="sm"
+                    color="white"
+                    variant="text"
+                    className="border py-4">
+                    Explore More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -165,17 +174,21 @@ const CarouselWithContent = () => {
                 className="mb-6 lg:mb-12 text-sm lg:text-xl opacity-80">
                 CALGARY EXHIBITION CENTER, CANADA
               </Typography>
-              <div className="flex justify-center gap-2">
-                <Button size="lg" color="white">
-                  Register Now
-                </Button>
-                <Button
-                  size="sm"
-                  color="white"
-                  variant="text"
-                  className="border">
-                  Explore More
-                </Button>
+              <div className="flex justify-center items-center gap-2">
+                <Link to="/conferences">
+                  <Button size="lg" color="white">
+                    Register Now
+                  </Button>
+                </Link>
+                <Link to="/conferences">
+                  <Button
+                    size="sm"
+                    color="white"
+                    variant="text"
+                    className="border py-4">
+                    Explore More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

@@ -8,11 +8,14 @@ import AboutUs from "../pages/AboutUs/AboutUs";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const Routes = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -21,15 +24,27 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/speakers",
-        element: <Speakers></Speakers>,
+        element: (
+          <PrivateRoute>
+            <Speakers></Speakers>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/conferences",
-        element: <Conferences></Conferences>,
+        element: (
+          <PrivateRoute>
+            <Conferences></Conferences>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/conferences/:id",
-        element: <CardItemPage></CardItemPage>,
+        element: (
+          <PrivateRoute>
+            <CardItemPage></CardItemPage>
+          </PrivateRoute>
+        ),
         loader: () => fetch("/data.json"),
       },
       {
