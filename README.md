@@ -1,8 +1,13 @@
-# React + Vite
+# Inconference Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [live Website](www.live.com)
 
-Currently, two official plugins are available:
+### Some features of this project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Navigation:** It includes a sticky navigation bar (StickyNavbar) at the top, providing navigation options for users.
+
+- **Hero Section:** There's a hero section with a carousel (CarouselWithContent) that likely displays rotating images or content to grab users' attention.
+
+- **Animation:** The content has animations applied using the "AOS" library, which adds visual effects to elements as the user scrolls down the page.
+
+- **Login & Register:** The login page allows users to sign in using their email and password, with options to remember login details or use social login via Google and Github. For new users, there's a link to the registration page to create an account with name, email, password, and profile photo. Toast notifications provide feedback.

@@ -112,7 +112,7 @@ const StickyNavbar = () => {
                     <div className="w-10 rounded-full">
                       <img
                         src={
-                          !user.photoURL === 'null'
+                          !user.photoURL === "null"
                             ? user.photoURL
                             : "https://lh3.googleusercontent.com/a/ACg8ocJvDHisVPydZIb8y6TGCfYfOlh0x8Vy5eB72O6EOOgy8YI=s96-c"
                         }
@@ -125,7 +125,7 @@ const StickyNavbar = () => {
                     className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black divide-y-2">
                     <li>
                       <button className="btn btn-sm normal-case btn-ghost">
-                        {user.email ? user.email : user.displayName}
+                        {user.displayName ? user.displayName : user.email}
                       </button>
                     </li>
                     <li>

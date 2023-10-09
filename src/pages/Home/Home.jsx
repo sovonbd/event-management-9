@@ -4,13 +4,15 @@ import { useEffect, useState } from "react";
 import CardItem from "../../components/Card/CardItem";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import { useLoaderData } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
   const [cards, setCards] = useState([]);
   const data = useLoaderData();
+  AOS.init();
 
   useEffect(() => {
-
     if (data) {
       setCards(data);
     }
@@ -31,7 +33,10 @@ const Home = () => {
           className="mx-auto lg:pb-10"
           alt=""
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-0 lg::grid-cols-3 px-3 justify-around">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-0 lg::grid-cols-3 px-3 justify-around">
           {cards.slice(0, 6).map((card) => (
             <CardItem key={card.id} card={card}></CardItem>
           ))}
